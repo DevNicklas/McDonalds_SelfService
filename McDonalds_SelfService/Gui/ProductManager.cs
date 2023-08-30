@@ -27,15 +27,22 @@ namespace McDonalds_SelfService.Gui
 
         public void DrawBurgerProduct()
         {
-            Database db = new Database();
-            string[,] data = db.GetBurgers();
+            //Database db = new Database();
+            //string[,] data = db.GetBurgers();
+            string[,] data =
+            {
+                { "Testdata", "39" },
+                { "Testdata", "39" },
+                { "Testdata", "39" },
+                { "Testdata", "39" },
+                { "Testdata", "39" }
+            };
 
             for(int i = 0;  i < data.GetLength(0); i++)
             {
-                DrawBox product = new DrawBox(x + 29 * i, y, height, width, null, boxColor, Console.ForegroundColor);
+                DrawBox(x + 29 * i, y, height, width, boxColor);
                 DrawText((x + 2) + 29 * i , y + 2, "Produkt: " + data[i, 0]);
                 DrawText((x + 2) + 29 * i, y + 3, "Pris: " + data[i, 1] + " kroner");
-                product.Draw();
             }
         }
     }

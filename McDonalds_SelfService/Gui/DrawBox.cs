@@ -8,6 +8,7 @@ namespace McDonalds_SelfService.Gui
 {
     internal class DrawBox : Screenmanager
     {
+        /*
         private int x;
         private int y;
         private int height;
@@ -88,5 +89,6 @@ namespace McDonalds_SelfService.Gui
                 Console.ForegroundColor = previousColor;
             }
         }
+        */
     }
 }

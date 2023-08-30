@@ -55,5 +55,42 @@ namespace McDonalds_SelfService.Gui
             Console.SetCursorPosition(x, y);
             Console.Write(text);
         }
+
+        /// <summary>
+        /// Uses the fields and draws an box within them
+        /// </summary>
+        protected void DrawBox(int x, int y, int height, int width, ConsoleColor boxColor)
+        {
+            // Color of foreground before changing it
+            ConsoleColor previousColor = Console.ForegroundColor;
+
+            Console.ForegroundColor = boxColor;
+            // Top horizontal line
+            DrawHorizontalLine(x, y, width, '═', '╔', '╗');
+
+            // Lower horizontal line
+            // The y value has been subtracted with one, since the top horizontal line is printed, and counts as one
+            DrawHorizontalLine(x, y + height - 1, width, '═', '╚', '╝');
+
+            // Both vertical lines
+            // If i = 0 then its the vertical line to the left
+            // If i = 1 then its the vertical line to the right
+            //
+            // The x value is calculated by using the index of the loop and
+            // multiplying it with the width-1, since the first value of x is 0 and not 1.
+            // Then it takes that result and adds to the x value
+            //
+            // The y value has been added by one, since the vertical line is printed just under the top horizontal line
+            //
+            // The height or length of the line, is subtracted with two, since the line has to be printed between
+            // the top and bottom horizontal lines
+            for (int i = 0; i < 2; i++)
+            {
+                DrawVerticalLine(x + i * (width - 1), y + 1, height - 2, '║');
+            }
+
+            // Change the color back to the previousColor
+            Console.ForegroundColor = previousColor;
+        }
     }
 }
