@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace McDonalds_SelfService.View
+namespace McDonalds_SelfService.Gui
 {
     abstract internal class Screenmanager
     {

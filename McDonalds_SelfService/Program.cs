@@ -1,4 +1,6 @@
-﻿using McDonalds_SelfService.View;
+﻿using McDonalds_SelfService.Dal;
+using McDonalds_SelfService.Gui;
+using McDonalds_SelfService.Logic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +14,9 @@ namespace McDonalds_SelfService
         static void Main(string[] args)
         {
             Console.SetWindowSize(170, 40);
-            DrawSelfServiceMenu draw = new DrawSelfServiceMenu();
-            draw.DrawTest();
 
+            DrawSelfServiceMenu draw = new DrawSelfServiceMenu();
+            draw.Draw();
 
             Console.ReadKey(true);
         }

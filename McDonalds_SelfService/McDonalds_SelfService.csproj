@@ -43,17 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\UserController.cs" />
+    <Compile Include="Dal\Database.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\DrawBox.cs" />
-    <Compile Include="View\DrawSelfServiceMenu.cs" />
-    <Compile Include="View\Screenmanager.cs" />
+    <Compile Include="Gui\DrawBox.cs" />
+    <Compile Include="Gui\DrawSelfServiceMenu.cs" />
+    <Compile Include="Gui\ProductManager.cs" />
+    <Compile Include="Gui\Screenmanager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
