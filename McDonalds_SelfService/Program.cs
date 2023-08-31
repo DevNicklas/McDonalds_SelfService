@@ -15,6 +15,7 @@ namespace McDonalds_SelfService
         {
             Console.SetWindowSize(170, 40);
 
+            // Draws the menu which the user can order products with
             DrawSelfServiceMenu draw = new DrawSelfServiceMenu();
             draw.Draw();
 

@@ -22,7 +22,7 @@ namespace McDonalds_SelfService.Gui
             Console.SetCursorPosition(x, y);
 
             // Prints one left corner, a horizontal line with a certain length, and a right corner
-            // 2 is removed from the length for printing the right size, since the 2 corners adds 2 in length
+            // Two is removed from the length for printing the right size, since the two corners adds two in length
             Console.Write(leftCornerChar + new string(horizontalChar, length - 2) + rightCornerChar);
         }
 
