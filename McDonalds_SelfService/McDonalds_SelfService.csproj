@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic\UserController.cs" />
     <Compile Include="Dal\Database.cs" />
+    <Compile Include="Gui\PopUpScreen.cs" />
+    <Compile Include="Logic\DatabaseLogic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Gui\DrawBox.cs" />
     <Compile Include="Gui\DrawSelfServiceMenu.cs" />
     <Compile Include="Gui\ProductManager.cs" />
     <Compile Include="Gui\Screenmanager.cs" />
